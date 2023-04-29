@@ -40,6 +40,6 @@ setup(
     maintainer=about["__maintainer__"],
     maintainer_email=about["__maintainer_email__"],
     packages=find_packages(),
-    install_requires=[],
+    install_requires=["flask"],
     extras_require={"dev": ["black", "mypy", "pylint", "pytest", "pytest-cov", "pytest-mypy"]},
 )

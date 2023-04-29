@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="charset" content="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <title>{{ artist['name'] }}</title>
+</head>
+
+<body>
+    <div class="header">
+        <img src="{{ artist['image'] }}" alt="{{ artist['name'] }}">
+        <h1>{{ artist['name'] }}</h1>
+    </div>
+    <div class="content">
+        <p>{{ artist['bio'] }}</p>
+    </div>
+</body>
+
+</html>
