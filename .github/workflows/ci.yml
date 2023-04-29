@@ -19,9 +19,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install -e ".[dev]"
     - name: Format check
-      run: black --diff --check mediator
+      run: black --diff --check oversized
     - name: Lint check
-      run: pylint --fail-under=10 mediator
+      run: pylint --fail-under=10 oversized
 
   build:
     runs-on: ubuntu-latest
@@ -58,8 +58,8 @@ jobs:
         pip install -e ".[dev]"
     - name: Test package
       run: |
-        pytest --cov mediator
-        pytest --mypy mediator
+        pytest --cov oversized
+        pytest --mypy oversized
 
   # deploy:
   #   runs-on: ubuntu-latest
