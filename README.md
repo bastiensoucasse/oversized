@@ -23,7 +23,7 @@ stability reasons, it is recommended to stay on the branch `master`, unless you 
 contribute to the project. You can then install the package from the sources:
 
 ```shell
-pip install --extra-index-url "https://download.pytorch.org/whl/cu118" -e ".[dev]"
+pip install -e ".[dev]"
 ```
 
 _Note: This command must be run in the project root directory._
