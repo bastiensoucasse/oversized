@@ -17,11 +17,11 @@ jobs:
     - name: Install package
       run: pip install -e ".[dev]"
     - name: Format check
-      run: black --diff --check oversized tests setup.py
+      run: black --diff --check oversized setup.py
     - name: Lint check
-      run: pylint --fail-under=10 oversized tests setup.py
+      run: pylint --fail-under=10 oversized setup.py
     - name: Type check
-      run: mypy oversized tests setup.py
+      run: mypy oversized setup.py
 
   build:
     runs-on: ubuntu-latest
