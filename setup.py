@@ -1,12 +1,6 @@
 """
 Package setup script for Oversized, Profuder’s rebranded music label.
 
-To install the package and its dependencies, run:
-
-    $ pip install .
-
-This will download and install the package from the PyPI repository, along with its specified dependencies.
-
 To install the package for development and testing, run:
 
     $ pip install -e ".[dev]"
@@ -17,16 +11,19 @@ For more information on how to use and contribute to the package, see the projec
 https://github.com/bastiensoucasse/oversized.
 """
 
-from typing import Dict
+from typing import Dict, List
 
-from setuptools import setup, find_packages
+from setuptools import find_packages, setup  # type: ignore
 
-with open("README.md", encoding="utf-8") as f:
-    readme = f.read()
+with open("README.md", mode="r", encoding="utf-8") as readme_file:
+    readme: str = readme_file.read()
+
+with open("requirements.txt", mode="r", encoding="utf-8") as requirements_file:
+    requirements: List[str] = requirements_file.read().splitlines()
 
 about: Dict[str, str] = {}
-with open("oversized/__init__.py", encoding="utf-8") as f:
-    exec(f.read(), about)
+with open("oversized/__init__.py", mode="r", encoding="utf-8") as initialization_file:
+    exec(initialization_file.read(), about)
 
 setup(
     name=about["__project__"],
@@ -40,6 +37,6 @@ setup(
     maintainer=about["__maintainer__"],
     maintainer_email=about["__maintainer_email__"],
     packages=find_packages(),
-    install_requires=["flask"],
-    extras_require={"dev": ["black", "mypy", "pylint", "pytest", "pytest-cov", "pytest-mypy"]},
+    install_requires=requirements,
+    extras_require={"dev": ["black", "mypy", "pylint"]},
 )

@@ -1,0 +1,51 @@
+{
+    "name": "Osabat",
+    "personal_information": {
+        "full_name": "Bastien Soucasse",
+        "other_names": [
+            "LC"
+        ],
+        "pronouns": "He/Him",
+        "birthdate": "1999-09-29",
+        "hometown": "Tarbes, France"
+    },
+    "music_information": {
+        "genres": [
+            "Pop",
+            "Hip-Hop",
+            "Electronic"
+        ]
+    },
+    "social_media": {
+        "instagram": "bastiensoucasse",
+        "twitter": "bastiensoucasse",
+        "tiktok": "osabat",
+        "youtube": "osabat",
+        "twitch": "osabat",
+        "soundcloud": "osabat"
+    },
+    "about": {
+        "q_and_a": [
+            {
+                "question": "Describe one of your earliest musical memories in detail.",
+                "answer": "The first time I heard Eminem’s “Sing for the Moment,” I was chocked by the technical skills and the feelings empowered by his lyrics. That moment opened my ears to a whole new genre of music that I still love today."
+            },
+            {
+                "question": "What are your top 3 all-time favorite albums and why? Why did you choose these three albums in particular?",
+                "answer": "“Born Pink” by BLACKPINK, “The Eminem Show” by Eminem, and “Rare” by Selena Gomez. Those 3 albums reflect my musical tastes and my personality. They have amazing songs for any mood, they make me feel a lot of emotions, and I love the artists and their work here."
+            },
+            {
+                "question": "Find a song of yours that you love and tell us what makes it special. Tell us why you chose this song.",
+                "answer": "Regolith. This is my first public song and I am particularly proud of it for the emotions I manage to share. This evolutive scene really is one of my best work so far."
+            }
+        ],
+        "biography": [
+            "Hailing from Tarbes, France, Bastien Soucasse, a.k.a. Osabat, is a passionate musician with a love for creating music that reflects his emotions and personal experiences. With a strong background in music theory, guitar, and piano, Bastien began his music production journey in 2017, where he started with live-remixes and small compositions on Apple GarageBand.",
+            "After discovering the limitations of the app, Bastien began to search for more powerful software to help him create the sound he was targeting in his head. In late 2017, he discovered Image-Line FL Studio and immediately began mastering the software and honing his production skills.",
+            "In 2020, Bastien was finally able to upgrade his equipment to an Apple MacBook Air and discovered the powerful capabilities of Ableton Live. With this new software, he began to explore new genres, including hip-hop and pop music, and developed his skills in mixing vocals.",
+            "Despite his passion for music production, Bastien takes the time to carefully evaluate each song he creates and shares it only with his closest friends and family to ensure it reflects the emotions and feelings he intended to convey. He draws inspiration from a wide range of genres, including hip-hop, pop, and even K-Pop, to create music that covers a broad range of emotions, from joy and laughter to sadness and heartbreak.",
+            "Bastien’s creative process varies from song to song, from recreating and customizing existing songs to finding chords and melodies on his piano and turning his ideas into a full-fledged song. With each new project, Bastien strives to create music that resonates with his listeners and reflects his own personal journey and growth as a musician.",
+            "Looking to the future, his upcoming projects, which are still in production, will showcase his newfound skills and creativity using Apple Logic Pro. Bastien also plans to release a series of EPs titled “The Journey,” which will feature remastered versions of his earliest songs. With a commitment to authenticity and a passion for creating music that reflects his own unique experiences, Bastien is an up-and-coming artist to watch in the world of music production."
+        ]
+    }
+}

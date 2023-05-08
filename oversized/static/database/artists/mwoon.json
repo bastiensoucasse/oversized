@@ -1,0 +1,24 @@
+{
+    "name": "Mwoon",
+    "personal_information": {
+        "full_name": "Tony Wolff",
+        "other_names": [
+            "Tronos"
+        ],
+        "pronouns": "He/Him",
+        "birthdate": "1998-09-14",
+        "hometown": "Perpignan, France"
+    },
+    "music_information": {
+        "genres": [
+            "Pop",
+            "Hip-Hop"
+        ]
+    },
+    "social_media": {
+        "instagram": "totowlf",
+        "twitter": "tronos10",
+        "youtube": "multitoto07",
+        "twitch": "tronoswtf"
+    }
+}
