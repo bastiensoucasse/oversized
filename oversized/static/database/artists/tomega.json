@@ -1,5 +1,9 @@
 {
     "name": "Tomega",
+    "genres": [
+        "Hip-Hop",
+        "Experimental"
+    ],
     "personal_information": {
         "full_name": "Thomas Henry",
         "other_names": [
@@ -9,13 +13,7 @@
         "birthdate": "2000-11-18",
         "hometown": "Mérignac, France"
     },
-    "music_information": {
-        "genres": [
-            "Hip-Hop",
-            "Experimental"
-        ]
-    },
-    "social_media": {
+    "social_medias": {
         "instagram": "tomegakun",
         "twitter": "tomegakun",
         "youtube": "themegaboul",

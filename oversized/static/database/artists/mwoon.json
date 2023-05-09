@@ -1,5 +1,9 @@
 {
     "name": "Mwoon",
+    "genres": [
+        "Pop",
+        "Hip-Hop"
+    ],
     "personal_information": {
         "full_name": "Tony Wolff",
         "other_names": [
@@ -9,13 +13,7 @@
         "birthdate": "1998-09-14",
         "hometown": "Perpignan, France"
     },
-    "music_information": {
-        "genres": [
-            "Pop",
-            "Hip-Hop"
-        ]
-    },
-    "social_media": {
+    "social_medias": {
         "instagram": "totowlf",
         "twitter": "tronos10",
         "youtube": "multitoto07",

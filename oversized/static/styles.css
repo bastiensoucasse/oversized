@@ -70,3 +70,8 @@ footer {
     color: #6e6e73;
     font-size: 12px;
 }
+
+img {
+    display: block;
+    width: 100%;
+}

@@ -1,5 +1,10 @@
 {
     "name": "Praisy",
+    "genres": [
+        "Pop",
+        "K-Pop",
+        "R&B"
+    ],
     "personal_information": {
         "full_name": "Iantsa Provost",
         "other_names": [
@@ -8,12 +13,5 @@
         "pronouns": "She/Her",
         "birthdate": "2001-02-28",
         "hometown": "Libourne, France"
-    },
-    "music_information": {
-        "genres": [
-            "Pop",
-            "K-Pop",
-            "R&B"
-        ]
     }
 }

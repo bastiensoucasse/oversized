@@ -3,8 +3,16 @@
 {% block title %}{{ artist.name }}{% endblock %}
 
 {% block content %}
+    {% if artist.image is defined %}
+        <img alt="{{ artist.name }}" src="{{ url_for('static', filename=artist.image) }}" />
+    {% endif %}
+
     <div class="section">
         <h2 class="section-title">{{ artist.name }}</h2>
+
+        {% if artist.genres is defined %}
+            <div class="section-subtitle">{{ artist.genres }}</div>
+        {% endif %}
 
         <div class="section-content">
             {% if artist.personal_information is defined %}
@@ -16,20 +24,11 @@
                 </ul>
             {% endif %}
 
-            {% if artist.music_information is defined %}
-                <h3>Music Information</h3>
-                <ul id="music-information">
-                    {% for key, value in artist.music_information.items() %}
-                        <li><strong>{{ key.replace("_", " ").title() }}:</strong> {{ value }}</li>
-                    {% endfor %}
-                </ul>
-                {% endif %}
-
-            {% if artist.social_media is defined %}
+            {% if artist.social_medias is defined %}
                 <h3>Social Media</h3>
                 <ul id="social-media">
-                    {% for social_media_platform, social_media_url in artist.social_media.items() %}
-                        <li><a href="{{ social_media_url }}" target="_blank">{{ social_media_platform }}</a></li>
+                    {% for social_media in artist.social_medias.values() %}
+                        <li><a href="{{ social_media.url }}" target="_blank">{{ social_media.platform_name }}</a></li>
                     {% endfor %}
                 </ul>
             {% endif %}
@@ -40,10 +39,10 @@
                 {% if artist.about.q_and_a is defined %}
                     <h4>Q&A</h4>
                     <ul>
-                        {% for qa in artist.about.q_and_a %}
+                        {% for q_and_a in artist.about.q_and_a %}
                             <li>
-                                <h5>{{ qa.question }}</h5>
-                                <p>{{ qa.answer }}</p>
+                                <h5>{{ q_and_a.question }}</h5>
+                                <p>{{ q_and_a.answer }}</p>
                             </li>
                         {% endfor %}
                     </ul>
@@ -51,8 +50,8 @@
 
                 {% if artist.about.biography is defined %}
                     <h4>Biography</h4>
-                    {% for bio in artist.about.biography %}
-                        <p>{{ bio }}</p>
+                    {% for biography_paragraph in artist.about.biography %}
+                        <p>{{ biography_paragraph }}</p>
                     {% endfor %}
                 {% endif %}
             {% endif %}

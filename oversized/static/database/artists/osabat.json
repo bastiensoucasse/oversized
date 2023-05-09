@@ -1,5 +1,10 @@
 {
     "name": "Osabat",
+    "genres": [
+        "Pop",
+        "Hip-Hop",
+        "Electronic"
+    ],
     "personal_information": {
         "full_name": "Bastien Soucasse",
         "other_names": [
@@ -9,14 +14,7 @@
         "birthdate": "1999-09-29",
         "hometown": "Tarbes, France"
     },
-    "music_information": {
-        "genres": [
-            "Pop",
-            "Hip-Hop",
-            "Electronic"
-        ]
-    },
-    "social_media": {
+    "social_medias": {
         "instagram": "bastiensoucasse",
         "twitter": "bastiensoucasse",
         "tiktok": "osabat",
