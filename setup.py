@@ -23,7 +23,7 @@ with open("requirements.txt", mode="r", encoding="utf-8") as requirements_file:
 
 about: Dict[str, str] = {}
 with open("oversized/__init__.py", mode="r", encoding="utf-8") as initialization_file:
-    exec(initialization_file.read(), about)
+    exec(initialization_file.read(), about)  # pylint: disable=exec-used
 
 setup(
     name=about["__project__"],

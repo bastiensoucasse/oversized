@@ -4,14 +4,13 @@ and responsive, and it retrieves artist information from a JSON file.
 
 The app includes the following routes:
 
-- /: The home page of the website. Displays the artist’s information retrieved from the artist.json file.
+- /: Home page of the website.
+- /artist/<artist_id>: Artist page displaying the artist information retrieved from the `artist.json` file.
 
 The app also includes static files (such as CSS and JavaScript) and HTML templates, which are located in the "static"
 and "templates" directories, respectively.
 
-To run the app, execute this file with Python:
-
-    $ python app.py
+To run the app, execute this file with Python: `python app.py`.
 
 By default, the app will be available at http://localhost:5000/ in your web browser.
 """
@@ -80,14 +79,11 @@ def _format_social_medias(artist_data: Dict[str, Any]) -> None:
 
 def _load_artist_data(artist_id: str) -> Dict[str, Any]:
     artist_data: Dict[str, Any] = _read_artist_data(artist_id)
-
     _add_artist_image(artist_data, artist_id)
-
     _format_genres(artist_data)
     _format_other_names(artist_data)
     _format_birthdate(artist_data)
     _format_social_medias(artist_data)
-
     return artist_data
 
 
@@ -97,7 +93,7 @@ def home() -> str:
     Home page of the Oversized music artist page.
 
     Returns:
-        str: The rendered HTML template for the home page.
+        Rendered HTML template for the home page.
     """
 
     return render_template("home.html")
@@ -110,10 +106,10 @@ def artist(artist_id: str) -> str:
     specified artist ID and displays it on the page.
 
     Parameters:
-        artist_id (str): The ID of the artist to retrieve information for.
+        artist_id: ID of the artist to retrieve information for.
 
     Returns:
-        str: The rendered HTML template for the artist page.
+        Rendered HTML template for the artist page.
     """
 
     return render_template("artist.html", artist=_load_artist_data(artist_id))

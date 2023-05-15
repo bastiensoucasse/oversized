@@ -1,23 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"/>
+        <title>{% block title %}{% endblock %} — Oversized</title>
+    </head>
 
-<head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
-    <title>{% block title %}{% endblock %} — Oversized</title>
-</head>
+    <body>
+        <header></header>
 
-<body>
-    <header></header>
+        <main>
+            {% block content %}
+            {% endblock %}
+        </main>
 
-    <main>
-        {% block content %}
-        {% endblock %}
-    </main>
-
-    <footer>
-        <div id="license" class="content">Copyright © 2023 Profuder. All rights reserved.</div>
-    </footer>
-</body>
-
+        <footer>
+            <div id="license" class="content">Copyright © 2023 Profuder. All rights reserved.</div>
+        </footer>
+    </body>
 </html>

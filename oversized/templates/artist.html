@@ -4,7 +4,7 @@
 
 {% block content %}
     {% if artist.image is defined %}
-        <img alt="{{ artist.name }}" src="{{ url_for('static', filename=artist.image) }}" />
+        <img alt="{{ artist.name }}" src="{{ url_for('static', filename=artist.image) }}"/>
     {% endif %}
 
     <div class="section">
